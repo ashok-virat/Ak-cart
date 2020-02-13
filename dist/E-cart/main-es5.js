@@ -279,6 +279,7 @@ var AdminCartComponent = /** @class */ (function () {
                 _this.notify = false;
                 _this.placed = false;
                 _this.buyerName = data.buyerName;
+                _this.getmycart();
             });
         };
         this.usercancelorderreqnotify = function (adminId) {
@@ -286,6 +287,7 @@ var AdminCartComponent = /** @class */ (function () {
                 _this.notify = false;
                 _this.cancelreq = false;
                 _this.buyerName = data.buyerName;
+                _this.getmycart();
             });
         };
         this.usercancelordernotify = function (adminId) {
@@ -293,6 +295,7 @@ var AdminCartComponent = /** @class */ (function () {
                 _this.notify = false;
                 _this.cancelorder = false;
                 _this.buyerName = data.buyerName;
+                _this.getmycart();
             });
         };
         this.userId = ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_5__["Cookie"].get('userId');
@@ -442,7 +445,7 @@ var AdminHomeComponent = /** @class */ (function () {
                     if (data.error == false) {
                         _this.file = '';
                         _this.productName = '';
-                        _this.prize = '';
+                        _this.price = '';
                         _this.discription = '';
                         _this.category = '';
                         _this.toastr.success(data.message);
@@ -680,6 +683,7 @@ var AdminOrdersComponent = /** @class */ (function () {
                 _this.notify = false;
                 _this.placed = false;
                 _this.buyerName = data.buyerName;
+                _this.getmycart();
             });
         };
         this.usercancelorderreqnotify = function (adminId) {
@@ -687,6 +691,7 @@ var AdminOrdersComponent = /** @class */ (function () {
                 _this.notify = false;
                 _this.cancelreq = false;
                 _this.buyerName = data.buyerName;
+                _this.getmycart();
             });
         };
         this.usercancelordernotify = function (adminId) {
@@ -694,6 +699,7 @@ var AdminOrdersComponent = /** @class */ (function () {
                 _this.notify = false;
                 _this.cancelorder = false;
                 _this.buyerName = data.buyerName;
+                _this.getmycart();
             });
         };
         this.userId = ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_5__["Cookie"].get('userId');
@@ -1728,6 +1734,7 @@ var CartComponent = /** @class */ (function () {
                 _this.notify = false;
                 _this.orderreq = false;
                 _this.sellerName = data.sellerName;
+                _this.getmycart();
             });
         };
         this.admindeleteordernotify = function (userId) {
@@ -1735,6 +1742,7 @@ var CartComponent = /** @class */ (function () {
                 _this.notify = false;
                 _this.ordercancel = false;
                 _this.sellerName = data.sellerName;
+                _this.getmycart();
             });
         };
         this.userId = ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_5__["Cookie"].get('userId');
@@ -1880,6 +1888,7 @@ var MyOrderComponent = /** @class */ (function () {
                 _this.notify = false;
                 _this.placed = false;
                 _this.sellerName = data.sellerName;
+                _this.getmycart();
             });
         };
         this.orderreqdeletenotify = function (userId) {
@@ -1887,6 +1896,7 @@ var MyOrderComponent = /** @class */ (function () {
                 _this.notify = false;
                 _this.orderreq = false;
                 _this.sellerName = data.sellerName;
+                _this.getmycart();
             });
         };
         this.admindeleteordernotify = function (userId) {
@@ -1894,6 +1904,7 @@ var MyOrderComponent = /** @class */ (function () {
                 _this.notify = false;
                 _this.ordercancel = false;
                 _this.sellerName = data.sellerName;
+                _this.getmycart();
             });
         };
         this.userId = ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_5__["Cookie"].get('userId');

@@ -278,6 +278,7 @@ let AdminCartComponent = class AdminCartComponent {
                 this.notify = false;
                 this.placed = false;
                 this.buyerName = data.buyerName;
+                this.getmycart();
             });
         };
         this.usercancelorderreqnotify = (adminId) => {
@@ -285,6 +286,7 @@ let AdminCartComponent = class AdminCartComponent {
                 this.notify = false;
                 this.cancelreq = false;
                 this.buyerName = data.buyerName;
+                this.getmycart();
             });
         };
         this.usercancelordernotify = (adminId) => {
@@ -292,6 +294,7 @@ let AdminCartComponent = class AdminCartComponent {
                 this.notify = false;
                 this.cancelorder = false;
                 this.buyerName = data.buyerName;
+                this.getmycart();
             });
         };
         this.userId = ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_5__["Cookie"].get('userId');
@@ -439,7 +442,7 @@ let AdminHomeComponent = class AdminHomeComponent {
                     if (data.error == false) {
                         this.file = '';
                         this.productName = '';
-                        this.prize = '';
+                        this.price = '';
                         this.discription = '';
                         this.category = '';
                         this.toastr.success(data.message);
@@ -675,6 +678,7 @@ let AdminOrdersComponent = class AdminOrdersComponent {
                 this.notify = false;
                 this.placed = false;
                 this.buyerName = data.buyerName;
+                this.getmycart();
             });
         };
         this.usercancelorderreqnotify = (adminId) => {
@@ -682,6 +686,7 @@ let AdminOrdersComponent = class AdminOrdersComponent {
                 this.notify = false;
                 this.cancelreq = false;
                 this.buyerName = data.buyerName;
+                this.getmycart();
             });
         };
         this.usercancelordernotify = (adminId) => {
@@ -689,6 +694,7 @@ let AdminOrdersComponent = class AdminOrdersComponent {
                 this.notify = false;
                 this.cancelorder = false;
                 this.buyerName = data.buyerName;
+                this.getmycart();
             });
         };
         this.userId = ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_5__["Cookie"].get('userId');
@@ -1702,6 +1708,7 @@ let CartComponent = class CartComponent {
                 this.notify = false;
                 this.orderreq = false;
                 this.sellerName = data.sellerName;
+                this.getmycart();
             });
         };
         this.admindeleteordernotify = (userId) => {
@@ -1709,6 +1716,7 @@ let CartComponent = class CartComponent {
                 this.notify = false;
                 this.ordercancel = false;
                 this.sellerName = data.sellerName;
+                this.getmycart();
             });
         };
         this.userId = ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_5__["Cookie"].get('userId');
@@ -1852,6 +1860,7 @@ let MyOrderComponent = class MyOrderComponent {
                 this.notify = false;
                 this.placed = false;
                 this.sellerName = data.sellerName;
+                this.getmycart();
             });
         };
         this.orderreqdeletenotify = (userId) => {
@@ -1859,6 +1868,7 @@ let MyOrderComponent = class MyOrderComponent {
                 this.notify = false;
                 this.orderreq = false;
                 this.sellerName = data.sellerName;
+                this.getmycart();
             });
         };
         this.admindeleteordernotify = (userId) => {
@@ -1866,6 +1876,7 @@ let MyOrderComponent = class MyOrderComponent {
                 this.notify = false;
                 this.ordercancel = false;
                 this.sellerName = data.sellerName;
+                this.getmycart();
             });
         };
         this.userId = ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_5__["Cookie"].get('userId');

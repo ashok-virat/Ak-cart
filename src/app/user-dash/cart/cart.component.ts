@@ -141,6 +141,7 @@ $('.btn-close').click(function(){
         this.notify=false;
         this.orderreq=false;
         this.sellerName=data.sellerName;
+        this.getmycart();
       }
     );
   }
@@ -151,6 +152,7 @@ $('.btn-close').click(function(){
         this.notify=false;
         this.ordercancel=false;
         this.sellerName=data.sellerName;
+        this.getmycart();
       }
     );
   }

@@ -149,7 +149,7 @@ $('.btn-close').click(function(){
         this.notify=false;
         this.placed=false;
         this.buyerName=data.buyerName;
-       
+       this.getmycart();
       }
     );
   }
@@ -160,6 +160,7 @@ $('.btn-close').click(function(){
         this.notify=false;
         this.cancelreq=false;
         this.buyerName=data.buyerName;
+        this.getmycart();
       }
     );
   }
@@ -171,6 +172,7 @@ $('.btn-close').click(function(){
         this.notify=false;
         this.cancelorder=false;
         this.buyerName=data.buyerName;
+        this.getmycart();
       }
     );
   }

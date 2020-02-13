@@ -161,7 +161,7 @@ public getonlineUsers=()=>{
        if(data.error==false){
      this.file='';
      this.productName='';
-     this.prize='';
+     this.price='';
      this.discription='';
      this.category='';
          this.toastr.success(data.message)
