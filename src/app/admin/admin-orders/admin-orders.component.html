@@ -1,0 +1,124 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 headder" >
+       <div class="headder" style="margin-top:10px;margin-bottom:10px">
+        <img src="../../../assets/shopping_cart_racing.png" width="30px" height="30px"> <span style="color:white">E-cart</span>
+      </div>
+      </div>
+    </div>
+  </div>
+    <div class="container-fluid menu">
+     <div class="row">
+       <div class="col-md-12" style="margin-top:25px;">
+    <div>
+        <svg width="30" height="30" class="click">
+          <path d='M0,5 30,5' stroke='#111' stoke-width="5"></path>
+          <path d='M0,14 30,14' stroke="#111" stoke-width="5"></path>
+          <path d='M0,23 30,23' stroke="#111" stoke-width="5"></path>
+        </svg>
+        <span class="main-text">Ashok Bejo</span>
+        <i class="fas fa-sign-out-alt" (click)="back()"></i>
+        </div>
+     </div>
+    </div>
+    </div>
+    
+    <div id="side-menu" class="side-nav">
+      <a  class="btn-close" >&times;</a>
+       <ul>
+        <li [routerLink]="['/adminhome']">Home</li>
+         <li [routerLink]="['/admincart']">Mycart</li>
+         <li >Orders</li>
+         
+       </ul>
+    </div>
+  
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div *ngIf="notify==false" class="notify">
+                <h5 class="notification" style="color:red;font-size:19px;">Notification Alert<i class="fas fa-bell"></i></h5>
+               <h5 class="notification" *ngIf="placed==false">Message : {{buyerName}} buy some product</h5>
+               <h5 class="notification" *ngIf="cancelreq==false">Message : {{buyerName}} cancel order requests</h5>
+               <h5 class="notification" *ngIf="cancelorder==false">Message : {{buyerName}} cancel order</h5>
+              </div>
+           
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+
+    <div class="container" *ngIf="Itemlength==0">
+        <div class="row">
+          <div class="col-md-4">
+            
+          </div>
+          <div class="col-md-4 empty">
+            your cart is empty
+          </div>
+          <div class="col-md-4">
+  
+          </div>
+        </div>
+      </div>
+      
+   
+    
+    
+  
+     <div class="container" style="margin-top:20px" *ngIf="Itemlength>0">
+                                   <div class="row">
+                                       <h4 class="my-cart">my-orders</h4>
+                               <marquee behavior="" direction="">waiting for delivery</marquee>
+                              <div class="table-responsive">
+                                <table class="table">
+                                 
+                                    <thead class="thead-dark">
+                                      <tr>
+                                        <th>productName</th>
+                                        <th>BuyerName</th>
+                                        <th>view</th>
+                                        <th>cancel</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr *ngFor="let item of items  | paginate: { itemsPerPage: count, currentPage: p}">
+                                        <td>{{item.productName}}</td>
+                                        <td>{{item.userfirstName}} {{item.userlastName}}</td>
+                                        <td><i class="fas fa-eye"  [routerLink]="['/view',item.productId]"></i></td>
+                                        <td><i class="fas fa-trash-alt" (click)="deleteorder(item.productId,item.userId)"></i></td>
+                                      </tr>
+                                      
+                                    </tbody>
+                                  </table>
+                                 
+                              </div>
+                            
+                           </div>
+                         </div>
+       
+                         <div class="controller">
+                            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                          </div>
+                    
+  
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 footer">
+        <div class="footer-main-div">
+          <div class="footer-social-icons">
+            <ul>
+                <p>Follow me</p>
+            <li><a href="https://twitter.com/Ashok82652056" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/__ashokvirat__/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/bejo.carter" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://github.com/ashok-virat" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <p>aruashok17@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    

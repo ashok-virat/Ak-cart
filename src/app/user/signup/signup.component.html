@@ -1,0 +1,106 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 headder" >
+       <div class="headder" style="margin-top:10px;margin-bottom:10px">
+        <img src="../../../assets/shopping_cart_racing.png" width="30px" height="30px"> <span style="color:white">E-cart</span>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid menu">
+   <div class="row">
+     <div class="col-md-12" style="margin-top:25px;">
+  <div>
+      
+      <h2 class="main-text">Ashok Bejo</h2>
+      </div>
+   </div>
+  </div>
+  </div>
+  
+  
+  
+ 
+  
+  <div class="container-fluid">
+    <div class="row main">
+      <div class="col-md-4">
+  
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="background-color:lightyellow;">
+          <div class="card-body">
+              <div class="card-title">
+                      
+                  Sign up
+              </div>
+              <form>
+          <div class="form-group">
+           
+                  <input type="text" class="form-control" id="exampleInputEmail1" name="firstName" [(ngModel)]="firstName" placeholder="First Name *">
+                           </div>
+           <div class="form-group">
+                
+                      <input type="email" class="form-control" id="exampleInputEmail2" name="lastName" [(ngModel)]="lastName" placeholder="Last Name *">
+              </div>
+              
+           <div class="form-group">
+                 
+                       <input type="email" class="form-control" id="exampleInputEmail4" name="email" [(ngModel)]="email" placeholder="Email *">
+              </div>
+            <div class="form-group">
+               
+                      <input type="password" class="form-control" id="exampleInputEmail5" name="password" [(ngModel)]="password" placeholder="Password *"> 
+                                       </div>
+                                              
+           <div class="form-group">
+               <label for="" style="color:grey;">Role :</label>
+          <select name="role" [(ngModel)]="role">
+              <option value="Admin">Admin</option>
+              <option value="User">User</option>
+          </select>
+   </div>
+                                       <div class="d-flex justify-content-center" *ngIf="loader==true">
+                                        <div class="spinner-border" role="status">
+                                          <span class="sr-only" style="color:black">Loading...</span>
+                                        </div>
+                                      </div>
+                  <div class="btn-alignment">
+                      
+                  <button type="submit" class="btn btn-primary" (click)="signup()">Sign up</button>
+  
+                  <p style="margin-top:20px">or</p>
+  
+                  <button type="submit" class="btn btn-secondary" (click)="signin()">Sign in</button>
+                  </div>
+                </form>
+             
+          </div>
+        </div>
+        <div class="col-md-4">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 footer">
+      <div class="footer-main-div">
+        <div class="footer-social-icons">
+          <ul>
+              <p>Follow me</p>
+          <li><a href="https://twitter.com/Ashok82652056" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/__ashokvirat__/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/bejo.carter" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://github.com/ashok-virat" target="_blank"><i class="fab fa-github"></i></a></li>
+          </ul>
+          <p>aruashok17@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  

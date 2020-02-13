@@ -1,0 +1,525 @@
+
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+.top {
+   
+    height:80px;
+    text-align:center;
+}
+h1 {
+    font-size:23px;
+    margin-top:25px;
+    color:white;
+}
+
+.navbar ul {
+    
+	list-style:none;
+	display: inline-block;
+}
+.navbar ul li {
+   display:inline-block;
+   font-size:18px;
+   padding:0 20px;
+ 
+   text-transform:uppercase;
+   cursor: pointer;
+   color:white;
+}
+.sticky {
+    position: sticky;
+    top:0px;
+    z-index: 500;
+}
+
+
+.stic {
+    background:rgb(231, 229, 229);
+  
+}
+
+img {
+    width:40px;
+}
+.side-nav {
+	height:100%;
+	width:0;
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+background:black;
+	opacity:0.9;
+	overflow-x:hidden;
+	padding-top:60px;
+    transition:0.5s;
+    
+}
+
+.menu-side {
+  margin-left:100px;
+}
+
+
+.side-nav a {
+	padding:10px 10px 10px 30px;
+	text-decoration:none;
+	color:#ccc;
+	display:block;
+	transition:0.3s;
+}
+.side-nav ul li {
+  padding:10px 10px 10px 30px;
+	text-decoration:none;
+  color:lightblue;
+  cursor: pointer;
+	display:block;
+  transition:0.3s;
+  text-transform: uppercase;
+}
+
+.side-nav ul li:hover {
+  color:darkblue;
+}
+
+.side-nav a:hover {
+    color:red;
+   
+}
+
+.side-nav .btn-close {
+	position:absolute;
+	top:0;
+	right:22px;
+	font-size:30px;
+    color:white;
+    cursor: pointer;
+}
+
+  
+
+.headder {
+  background-color:darkblue;
+  width:100%;
+
+  color:black;
+
+}
+.headder img {
+  width:40px;
+  border-radius:100px;
+}
+
+      .menu {
+        background-color:rgb(252, 252, 217);
+        height:80px;
+        
+      }
+
+      .menu-2 {
+        position: relative;
+        height:60px;
+      }
+       
+      .menu-2 ul {
+        width:100%;
+        height:60px;
+        text-align: center;
+        position: relative;
+      }
+
+      .menu-2 ul li{
+        display: inline-block;
+        position: relative;
+        padding:30px;
+        text-transform:uppercase;
+        cursor: pointer;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .main{
+        background-color:lightyellow;
+       
+        margin-top:30px;
+      }
+
+      
+.card {
+  
+ margin-top:30px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:20px;
+  border:none;
+ height:400px;
+}
+.card img {
+  text-align:center;
+  width:100%;
+  height:200px;
+}
+label {
+  color:white;
+  text-transform:uppercase;
+}
+.btn-primary {
+ 
+  text-align: center;
+  background-color:darkblue;
+  border-color:white;
+  margin-top:10px;
+  width:100%;
+  
+}
+.btn-secondary {
+  text-align: center;
+  background-color:lightyellow;
+  border-color:darkblue;
+  color:darkblue;
+  margin-top:10px;
+  width:100%;
+}
+.btn-alignment {
+  width:100%;
+  text-align:center;
+}
+.btn-primary:hover {
+  background-color:white;
+  border-color: rgb(24, 23, 23);
+  color:rgb(24, 23, 23);
+}
+
+
+.fa-google-plus {
+  margin-top:20px;
+  background-color:red;
+  padding:10px;
+  border:none;
+  color:white;
+}
+.signup {
+  margin-top:20px;
+  color:white;
+  text-align: center;
+}
+small {
+  text-transform: capitalize;
+}
+.signup a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:1.4rem;
+  padding:10px;
+  cursor: pointer;
+  color:white;
+  text-decoration:none;
+  text-transform: uppercase;
+}
+.signup a:hover {
+  color:rgb(170, 168, 168);
+}
+.card-title {
+  color:darkblue;
+  text-align:center;
+  font-size:20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input {
+  border-radius:0;
+ 
+  border-width:1.5px;
+}
+
+.form-control:focus, textarea:focus, select:focus{
+  
+  outline:none;
+
+}
+
+.footer {
+   margin-top:30px;
+   background-color:darkblue;
+ }
+ .footer-main-div{
+   height:auto;
+   margin:auto;
+   padding:20px 0px;
+ }
+ .footer-social-icons {
+   width:100%;
+   height: auto;
+ }
+ .footer-social-icons ul {
+   margin:0px;
+   padding:0px;
+   text-align: center;
+   list-style-type:none;
+ }
+ .footer-social-icons ul li {
+   display: inline-block;
+   width:50px;
+   height:50px;
+   margin:0px 10px;
+   border-radius:100%;
+   cursor: pointer;
+ }
+ .footer-social-icons ul li a {
+   font-size:25px;
+   color:white;
+ }
+ .footer-social-icons ul li a i {
+   line-height: 30px;
+ }
+ .footer-social-icons ul li a i:hover{
+    color:black;
+ }
+ .footer-social-icons p {
+   color:white;
+   text-align: center;
+ }
+
+
+
+ 
+ .main-header ul li {
+    display: inline-block;
+ } 
+ .main-header ul {
+   margin-top:20px;
+   width:100%;
+   
+ }
+ .main-text {
+   display: inline-block;
+   color:darkblue;
+   letter-spacing:5px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-style:italic;
+   width:95%;
+   text-align:center;
+   font-size:18px;
+ }
+ input:focus {outline:none;}
+ 
+ *:focus {
+  outline: none;
+}
+
+@media only screen and (max-width:630px) {
+    .main-text {
+        width:85%;
+        font-size:18px;
+      }
+      .main-head {
+        font-size: 14px;
+    }
+      
+      .menu-2 ul {
+        width:100%;
+        height:60px;
+        text-align: center;
+        position: relative;
+      }
+
+      .menu-2 ul li{
+        display: inline-block;
+        padding:12px;
+        margin-top:20px;
+        font-size:12px;
+    
+      }
+      svg {
+        width:20px;
+       
+      }
+}
+.active {
+    color:red;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .toys {
+      background-color:lightyellow;
+      height:100px;
+      margin-top:20px;
+  }
+ 
+  .main-head {
+      margin-top:40px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-style: italic;
+      letter-spacing:5px;
+      font-weight:600;
+      color:black;
+      text-align:center;
+  }
+
+  img {
+    width:200px;
+   
+    
+  }
+  .img {
+   
+      margin-left:auto;
+      margin-right:auto;
+  }
+   h3 {
+      text-align:center;
+      font-size:14px;
+      text-transform:uppercase;
+      color:blue;
+  }
+  p {
+    text-align:center;
+    font-size:13px;
+    text-transform:uppercase;
+    color:blue;
+  }
+  .fa-sign-out-alt{
+    color:black;
+    float: right;
+    font-size:18px;
+    margin-top:10px;
+    cursor: pointer;
+  }
+  @media only screen and (max-width:973px) {
+    .main-text {
+        width:85%;
+        font-size:14px;
+      }
+      
+      .fa-sign-out-alt{
+        color:black;
+        float: right;
+        font-size:14px;
+      }
+}
+.header {
+    text-align:left;
+    font-size:20px;
+    font-family:'Times New Roman', Times, serif;  
+    text-transform:uppercase;
+    margin-top:20px;
+    margin-left:10px;
+}
+.btn-info {
+  
+    color:black;
+    background-color:white;
+    border:none;
+    cursor: pointer;
+    background-color:blue;
+}
+.btn-info:hover {
+    background-color:rgb(221, 131, 131);
+}
+label {
+    color:black;
+}
+
+.cardtext {
+  text-align: center;
+  opacity:0.8;
+  color:grey;
+}
+
+.card-title {
+  text-transform:uppercase;
+  color:black;
+}
+.btn-light {
+  margin:auto;
+  width:100%;
+  margin-top:25px;
+}
+.controller {
+  text-align: right;
+  margin:10px;
+}
+
+@media only screen and (max-width:500px) {
+    .fa-user-tie {
+        font-size:15px;
+    }
+    tbody td {
+       font-size:9px;
+    }
+    thead tr th {
+        font-size:9px;
+    }
+   
+}
+
+.table {
+    margin-top:15px;
+}
+thead {
+    
+    text-align:center;
+}
+thead tr th {
+    text-transform:uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+tbody {
+    text-align: center;
+  
+}
+tbody td {
+    border-bottom:1px solid black;
+}
+.fa-eye {
+    cursor: pointer;
+}
+.fa-eye:hover {
+    color:green;
+}
+.fa-check:hover {
+    color:green;
+}
+.fa-check {
+    cursor:pointer;
+}
+.fa-trash-alt{
+    cursor: pointer;
+}
+.fa-trash-alt:hover {
+   color:red;
+}
+marquee{
+    color:black;
+    text-transform:uppercase;
+}
+.my-cart {
+    color:black;
+    margin:5px;
+    text-transform:capitalize;
+    text-align:center;
+}
+
+.empty {
+    margin-top:100px;
+    text-align:center;
+    border:2px solid black;
+    padding:40px;
+  
+}
+.notify {
+  border:2px solid black;
+  padding:10px;
+  border-radius:20px;
+  margin-top:20px;
+  box-shadow:0px 0px 20px black;
+}
+.notification {
+  color:black;
+  text-align:center;
+  text-transform: uppercase;
+  font-size:15px;
+  margin-top:20px;
+}

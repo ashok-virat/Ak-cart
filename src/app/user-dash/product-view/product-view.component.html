@@ -1,0 +1,94 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 headder" >
+       <div class="headder" style="margin-top:10px;margin-bottom:10px">
+        <img src="../../../assets/shopping_cart_racing.png" width="30px" height="30px"> <span style="color:white">E-cart</span>
+      </div>
+      </div>
+    </div>
+  </div>
+    
+    <div class="container-fluid menu">
+     <div class="row">
+       <div class="col-md-12" style="margin-top:25px;">
+    <div>
+        <svg width="30" height="30" class="click">
+          <path d='M0,5 30,5' stroke='#111' stoke-width="5"></path>
+          <path d='M0,14 30,14' stroke="#111" stoke-width="5"></path>
+          <path d='M0,23 30,23' stroke="#111" stoke-width="5"></path>
+        </svg>
+        <span class="main-text">Ashok Bejo</span>
+        <i class="fas fa-sign-out-alt" (click)="back()"></i>
+        </div>
+     </div>
+    </div>
+    </div>
+    
+    <div id="side-menu" class="side-nav">
+      <a  class="btn-close" >&times;</a>
+       <ul>
+        <li [routerLink]="['/userhome']">Home</li>
+         <li [routerLink]="['/cart']">Mycart</li>
+         <li [routerLink]="['/myorder']">Orders</li>
+      
+       </ul>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div *ngIf="notify==false" class="notify">
+                <h5 class="notification" style="color:red;font-size:19px;">Notification Alert<i class="fas fa-bell"></i></h5>
+               <h5 class="notification" *ngIf="placed==false">Message : {{sellerName}}  accept your order</h5>
+               <h5 class="notification" *ngIf="orderreq==false">Message : {{sellerName}}  delete your order request</h5>
+               <h5 class="notification" *ngIf="ordercancel==false">Message : {{sellerName}}  delete your order</h5>
+              </div>
+           
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+  
+    <div class="container-fluid">
+      <div class="row">
+          
+       
+       <div class="col-md-6"> 
+        <div class="story-card">
+         <div class="card-image">
+             <img src="http://35.154.25.2:4001/{{datas.product}}" alt="">
+         </div>
+         
+        </div></div>
+     
+        <div class="col-md-6" >
+          <h2 class="productName">productName: {{datas.productName}}</h2>
+          <h6 style="margin-bottom:10px;text-transform: capitalize;" class="texts">{{datas.discription}}</h6>
+          <h6 class="productClass">PRICE: {{datas.price}}</h6>
+          <h6 class="productClass">CATEGORY: {{datas.category}}</h6>
+          </div>
+          
+      </div>
+    </div>
+  
+  
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 footer">
+        <div class="footer-main-div">
+          <div class="footer-social-icons">
+            <ul>
+                <p>Follow me</p>
+            <li><a href="https://twitter.com/Ashok82652056" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/__ashokvirat__/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/bejo.carter" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://github.com/ashok-virat" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <p>aruashok17@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    
