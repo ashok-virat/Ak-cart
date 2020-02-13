@@ -12,7 +12,7 @@ export class SocketService {
   socket: any;
 
   constructor() { 
-    this.baseUrl='ec2-35-154-25-2.ap-south-1.compute.amazonaws.com';
+    this.baseUrl='http://35.154.25.2:4001';
     this.socket=io(this.baseUrl);
   }
   

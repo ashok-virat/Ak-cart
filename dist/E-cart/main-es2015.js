@@ -493,6 +493,7 @@ let AdminHomeComponent = class AdminHomeComponent {
                 this.notify = false;
                 this.placed = false;
                 this.buyerName = data.buyerName;
+                this.toastr.success(`${this.buyerName} buy some product`);
             });
         };
         this.usercancelorderreqnotify = (adminId) => {
