@@ -331,3 +331,7 @@ input {
     -webkit-box-shadow: none;
     box-shadow: none;
   }
+  #box{
+    margin:auto;
+    width:100%;
+  }

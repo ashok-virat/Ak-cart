@@ -46,6 +46,12 @@ $('.btn-close').click(function(){
      $('.click').removeClass('new')
      
     })
+    $('document').ready(function(){
+      $('#box').click(function(){
+        $('#password').attr('type',$(this).is(':checked') ? 'text' : 'password')
+        
+     })
+    })
   }
 
 
