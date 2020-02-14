@@ -218,7 +218,7 @@ public getonlineUsers=()=>{
     Cookie.delete('authToken');
     Cookie.delete('userName');
     Cookie.delete('userId');
-    this.socketService.exitsocket();
+   
     this.socketService.disconnectedSocket();
   }
 

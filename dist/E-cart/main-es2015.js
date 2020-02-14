@@ -485,7 +485,6 @@ let AdminHomeComponent = class AdminHomeComponent {
             ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_3__["Cookie"].delete('authToken');
             ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_3__["Cookie"].delete('userName');
             ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_3__["Cookie"].delete('userId');
-            this.socketService.exitsocket();
             this.socketService.disconnectedSocket();
         };
         this.getplaceordernotify = (adminId) => {
@@ -1503,11 +1502,6 @@ let SocketService = class SocketService {
             return ak;
         };
         //disconnected code end
-        //exit socket code start
-        this.exitsocket = () => {
-            this.socket.disconnect();
-        };
-        //exit socket code end
         //place-order code start
         this.addplaceorder = (data) => {
             this.socket.emit('place-order', data);
@@ -2208,7 +2202,6 @@ let UserHomeComponent = class UserHomeComponent {
             ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_5__["Cookie"].delete('authToken');
             ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_5__["Cookie"].delete('userName');
             ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_5__["Cookie"].delete('userId');
-            this.socketService.exitsocket();
             this.socketService.disconnectedSocket();
         };
         this.addplaceorder = (adminId) => {

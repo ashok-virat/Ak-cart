@@ -55,11 +55,7 @@ export class SocketService {
       }
       //disconnected code end
 
-       //exit socket code start
-     public exitsocket=()=>{
-      this.socket.disconnect();
-     }
-      //exit socket code end
+      
 
 
       //place-order code start
