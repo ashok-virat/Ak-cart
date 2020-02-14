@@ -495,7 +495,6 @@ var AdminHomeComponent = /** @class */ (function () {
                 _this.notify = false;
                 _this.placed = false;
                 _this.buyerName = data.buyerName;
-                _this.toastr.success(_this.buyerName + " buy some product");
             });
         };
         this.usercancelorderreqnotify = function (adminId) {
