@@ -21,7 +21,7 @@
     "@angular/router": "~8.1.1",
     "@fortawesome/fontawesome-free": "^5.12.1",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ng2-cookies": "^1.0.12",
     "ngx-pagination": "^5.0.0",
     "ngx-toastr": "^11.2.1",
